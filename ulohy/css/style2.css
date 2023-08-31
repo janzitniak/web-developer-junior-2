@@ -1,0 +1,85 @@
+* {
+    padding: 10px;
+}
+
+.hlavny {
+    background-color: darkred; /* Zlozena zatvorka cez klavesovu skratku AltGr + B */
+    margin: 0 auto; /* Kontajner tymto vycentrujeme */
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.hlavicka {
+    background-color: blue;
+    min-height: 100px;
+}
+
+.riadok {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+}
+
+.lavy {
+    background-color: orange;
+    flex: 2; /* Rozmer daneho kontajnera */
+}
+
+.pravy {
+    background-color: hotpink;
+    flex: 2;
+    text-align: left;
+}
+
+.patka {
+    background-color: #d6551e;
+}
+
+@media screen and (max-width: 600px) {
+    .riadok {
+        flex-direction: column;
+    }
+}
+
+.obrazok {
+    max-width: 100px;
+    float: left; /* Alebo right */
+    margin-right: 10px; /* Prispôsobte podľa potreby */
+    border-radius: 25px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* a:hover reaguje na kurzor mysi, ked prejde cez odkaz */
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color: aquamarine;
+}
+
+.logo {
+    color: #d6551e;
+    font-size: 32px;
+    font-family: Arial;
+}
+
+.skratka {
+    color: white;
+}
+
+div ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+div li {
+    display: inline-block;
+    margin-right: 30px; /* Môžete pridať medzeru medzi položkami */
+}

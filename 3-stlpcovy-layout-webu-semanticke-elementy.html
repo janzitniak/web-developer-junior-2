@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>3-stĺpcový web dizajn</title>
+
+    <style>
+        .hlavny {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hlavicka {
+            background-color: orange;
+        }
+
+        .patka {
+            background-color: pink;
+        }
+
+        .riadok {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .lavy {
+            width: 20%;
+            background-color: green;
+        }
+
+        .stredny {
+            width: 60%;
+            background-color: blue;
+        }
+
+        .pravy {
+            width: 20%;
+            background-color: red;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 10px; /* Môžete pridať medzeru medzi položkami */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav {
+            float: right;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<main class="hlavny">
+    <header class="hlavicka">
+        <nav>
+            <ul>
+                <li><a href="#">Odkaz 1</a></li>
+                <li><a href="#">Odkaz 2</a></li>
+                <li><a href="#">Odkaz 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="riadok">
+        <article class="lavy">Ľavý s textom</article>
+        <article class="stredny">Stredný s textom</article>
+        <article class="pravy">Pravý s textom</article>
+    </section>
+    <footer class="patka">Pätka</footer>
+</main>
+
+</body>
+
+</html>
