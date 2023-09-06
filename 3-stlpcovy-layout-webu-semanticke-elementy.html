@@ -2,83 +2,56 @@
 <html lang="sk">
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <title>3-stĺpcový web dizajn</title>
-
-    <style>
-        .hlavny {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .hlavicka {
-            background-color: orange;
-        }
-
-        .patka {
-            background-color: pink;
-        }
-
-        .riadok {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .lavy {
-            width: 20%;
-            background-color: green;
-        }
-
-        .stredny {
-            width: 60%;
-            background-color: blue;
-        }
-
-        .pravy {
-            width: 20%;
-            background-color: red;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav li {
-            display: inline-block;
-            margin-right: 10px; /* Môžete pridať medzeru medzi položkami */
-        }
-
-        nav a {
-            text-decoration: none;
-            color: black;
-        }
-
-        nav {
-            float: right;
-        }
-
-    </style>
-
+    <link href="css/style-semanticke.css" media="screen" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 
-<main class="hlavny">
-    <header class="hlavicka">
-        <nav>
-            <ul>
-                <li><a href="#">Odkaz 1</a></li>
-                <li><a href="#">Odkaz 2</a></li>
-                <li><a href="#">Odkaz 3</a></li>
-            </ul>
-        </nav>
+<main>
+    <header>
+        <a alt="Hlavná stránka TM Consulting" class="logo" href="/"><span class="skratka">TM</span> Consulting</a>
     </header>
-    <section class="riadok">
-        <article class="lavy">Ľavý s textom</article>
-        <article class="stredny">Stredný s textom</article>
-        <article class="pravy">Pravý s textom</article>
+    <nav>
+        <ul>
+            <li><a href="#">Odkaz 1</a></li>
+            <li><a href="#">Odkaz 2</a></li>
+            <li><a href="#">Odkaz 3</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article class="lavy farba-textu">Ľavý kontajner Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Accusantium consequatur dolore eligendi eos est
+            minus modi numquam odit quibusdam similique. At doloremque eaque
+            magnam minus possimus quae qui. Neque, quisquam.
+        </article>
+        <article class="stredny">Stredný kontajner Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Animi aut, corporis cum delectus
+            distinctio, inventore laborum laudantium maxime, minus optio placeat
+            qui quis recusandae. Et minima perferendis tenetur! Necessitatibus,
+            voluptatem?
+        </article>
+        <article class="pravy farba-textu">
+            <img class="obrazok" src="obrazky/leto.jpg">
+            Pravý kontajner Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Alias beatae, distinctio eaque est, eum expedita facere,
+            inventore ipsa itaque maiores maxime pariatur quam reprehenderit sed
+            tempora. A eaque harum sequi.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+            facilis labore nisi nobis voluptates. A laboriosam necessitatibus
+            quia repudiandae soluta! Accusantium enim error ipsam nam
+            necessitatibus porro quas repellat suscipit. Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Amet commodi debitis deserunt
+            dicta dolorem dolores esse id laboriosam maiores modi odio porro
+            repudiandae saepe sapiente ullam vel, veritatis voluptatem,
+            voluptates.
+        </article>
     </section>
-    <footer class="patka">Pätka</footer>
+    <footer>
+        Autor stránky
+        <a alt="Autor stránky Ján Žitniak" href="https://www.janzitniak.info">&copy; Ján &nbsp;&nbsp;&nbsp;&nbsp;Žitniak</a>
+        <a alt="TM Consulting" href="https://www.tmconsulting.sk">TM Consulting</a>
+    </footer>
 </main>
 
 </body>
