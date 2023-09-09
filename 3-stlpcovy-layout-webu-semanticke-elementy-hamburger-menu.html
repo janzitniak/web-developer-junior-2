@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>3-stĺpcový web dizajn</title>
+  <link href="css/style-semanticke-hamburger-menu.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<main>
+  <header>
+    <a alt="Hlavná stránka TM Consulting" class="logo" href="/"><span class="skratka">TM</span> Consulting</a>
+  </header>
+
+  <nav class="hornanavigacia responzivna" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </nav>
+
+  <section>
+    <article class="lavy farba-textu">Ľavý kontajner Lorem ipsum dolor sit amet, consectetur
+      adipisicing elit. Accusantium consequatur dolore eligendi eos est
+      minus modi numquam odit quibusdam similique. At doloremque eaque
+      magnam minus possimus quae qui. Neque, quisquam.
+    </article>
+    <article class="stredny">Stredný kontajner Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit. Animi aut, corporis cum delectus
+      distinctio, inventore laborum laudantium maxime, minus optio placeat
+      qui quis recusandae. Et minima perferendis tenetur! Necessitatibus,
+      voluptatem?
+    </article>
+    <article class="pravy farba-textu">
+      <img class="obrazok" src="obrazky/leto.jpg">
+      Pravý kontajner Lorem ipsum dolor sit amet, consectetur adipisicing
+      elit. Alias beatae, distinctio eaque est, eum expedita facere,
+      inventore ipsa itaque maiores maxime pariatur quam reprehenderit sed
+      tempora. A eaque harum sequi.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+      facilis labore nisi nobis voluptates. A laboriosam necessitatibus
+      quia repudiandae soluta! Accusantium enim error ipsam nam
+      necessitatibus porro quas repellat suscipit. Lorem ipsum dolor sit
+      amet, consectetur adipisicing elit. Amet commodi debitis deserunt
+      dicta dolorem dolores esse id laboriosam maiores modi odio porro
+      repudiandae saepe sapiente ullam vel, veritatis voluptatem,
+      voluptates.
+    </article>
+  </section>
+  <footer>
+    Autor stránky
+    <a alt="Autor stránky Ján Žitniak" href="https://www.janzitniak.info">&copy; Ján &nbsp;&nbsp;&nbsp;&nbsp;Žitniak</a>
+    <a alt="TM Consulting" href="https://www.tmconsulting.sk">TM Consulting</a>
+  </footer>
+</main>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "hornanavigacia") {
+      x.className += " responzivna";
+    } else {
+      x.className = "hornanavigacia";
+    }
+  }
+</script>
+</body>
+
+</html>
