@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<h2>JavaScript Statements</h2>
+
+<p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+  var x, y, z;  // Statement 1
+  x = 5;        // Statement 2
+  y = 6;        // Statement 3
+  z = x + y;    // Statement 4
+
+  document.getElementById("demo").innerHTML = "The value of z is " + z + ".";
+
+/*  var meno, priezvisko, osobneUdaje;*/
+  meno = "Martin"; // Vytvorenie a naplnenie premennej meno
+  priezvisko = "Hríbik"; // Vytvorenie a naplnenie premennej priezvisko
+  pocetRokov = 30; // Vytvorenie a naplnenie premennej pocetRokov, cislo nie je potrebne vlozit do uvodzoviek
+  zamestnavatel = "Firma XYZ s.r.o.";
+  // Vytvorenie premenne osobneUdaje, ktora spaja obsah jednotlivych premennych s vlastnym textom, na to prave pouzijeme +
+  osobneUdaje = meno + " " + priezvisko + " je zamestnancom " + zamestnavatel +
+          " a má " + pocetRokov + " rokov.";
+
+  document.getElementById("demo2").innerHTML = osobneUdaje;
+
+  a = 15;
+  b = 16;
+  c = a + b;
+  console.log(c)
+
+
+</script>
+
+</body>
+</html>
