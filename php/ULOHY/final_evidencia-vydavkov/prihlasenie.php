@@ -5,7 +5,7 @@
         <input type="text" name="login">
         <br><br>
         Heslo:
-        <input type="text" name="heslo">
+        <input type="password" name="heslo">
         <br><br>
         <button type="submit">Prihlás sa</button>
     </form>

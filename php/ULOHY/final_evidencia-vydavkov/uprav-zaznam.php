@@ -10,7 +10,7 @@ $id = $_GET['id'];
 // SQL query na zobrazenie konkretneho udaju
 // $sql = "SELECT id, nazov, kategoria, cena, datum FROM vydavky WHERE id=".$id;
 //$sql = "SELECT * FROM vydavky WHERE id=".$id;
-$sql = "SELECT id, nazov, kategoria, cena, datum FROM vydavky WHERE id=$id";
+$sql = "SELECT id, nazov, kategoria, cena, datum, poznamka FROM vydavky WHERE id=$id";
 //echo $sql;
 
 //$meno = "Ján Žitniak";
@@ -26,6 +26,7 @@ if (mysqli_num_rows($result) > 0) {
         $kategoria = $row["kategoria"];
         $cena = $row["cena"];
         $datum = $row["datum"];
+        $poznamka = $row["poznamka"];
     }
 }
 ?>
@@ -42,6 +43,7 @@ if (mysqli_num_rows($result) > 0) {
     <br>
     Zadaj cenu: <input type="number" name="cena" step="0.1" value="<?php echo $cena; ?>"><br>
     Vyber dátum záznamu:<input type="date" name="datum" value="<?php echo $datum; ?>"><br>
+    Poznámka: <textarea cols="50" rows="10" name="poznamka"><?php echo $poznamka; ?></textarea><br>
     <input type="hidden" name="id" value="<?php echo $id; ?>">
     <button type="submit">Ulož upravený</button>
 </form>

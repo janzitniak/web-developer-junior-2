@@ -1,6 +1,7 @@
 <?php
 // https://www.w3schools.com/php/php_mysql_update.asp
 include "hlavicka.php";
+require "kontrola-prihlasenia.php";
 require "db.php";
 echo "<h1>ULOŽENÝ UPRAVENÝ ZÁZNAM | Evidencia výdavkov | webová aplikácia</h1>";
 // Získanie údajov z formulára
@@ -9,9 +10,10 @@ $nazov = $_POST['nazov'];
 $kategoria = $_POST['kategoria'];
 $cena = $_POST['cena'];
 $datum = $_POST['datum'];
+$poznamka = $_POST['poznamka'];
 
 // SQL query na aktualizaciu, upravu zaznamu, teda (U)PDATE
-$sql = "UPDATE vydavky SET nazov='$nazov', cena='$cena', kategoria='$kategoria', datum='$datum' WHERE id=$id"; // Umyselne vynechanie stlpca kategoria
+$sql = "UPDATE vydavky SET nazov='$nazov', cena='$cena', kategoria='$kategoria', datum='$datum', poznamka='$poznamka' WHERE id=$id"; // Umyselne vynechanie stlpca kategoria
 //echo $sql;
 if (mysqli_query($conn, $sql)) {
     echo "Záznam bol úspešne aktualizovaný!";

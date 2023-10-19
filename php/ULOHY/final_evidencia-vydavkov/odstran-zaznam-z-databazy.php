@@ -1,6 +1,7 @@
 <?php
 // https://www.w3schools.com/php/php_mysql_delete.asp
 include "hlavicka.php";
+require "kontrola-prihlasenia.php";
 require "db.php";
 echo "<h1>ODSTRÁNENÝ ZÁZNAM | Evidencia výdavkov | webová aplikácia</h1>";
 

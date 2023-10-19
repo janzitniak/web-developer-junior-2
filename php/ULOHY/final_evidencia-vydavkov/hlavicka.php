@@ -2,7 +2,7 @@
 <html lang="sk">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Evidencia výdavkov</title>
 </head>
 <body>
 hlavicka

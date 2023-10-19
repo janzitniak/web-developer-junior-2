@@ -5,13 +5,13 @@ require "kontrola-prihlasenia.php";
 require "db.php";
 echo "<h1>ZOBRAZ VŠETKY ZÁZNAMY | Evidencia výdavkov | webová aplikácia</h1>";
 // SQL query na zobrazenie vsetkych udajov, teda (R)EAD
-$sql = "SELECT id, nazov, kategoria, cena, datum FROM vydavky";
+$sql = "SELECT id, nazov, kategoria, cena, datum, poznamka FROM vydavky";
 $result = mysqli_query($conn, $sql); // mysqli_query mi dane SQL vykona
 
 if (mysqli_num_rows($result) > 0) {
     echo "<table>";
     echo "<tr>";
-    echo "<th>Názov</th><th>Kategória</th><th>Cena</th><th>Dátum</th><th>Akcia</th><th>Akcia</th>";
+    echo "<th>Názov</th><th>Kategória</th><th>Cena</th><th>Dátum</th><th>Poznámka</th><th>Akcia</th><th>Akcia</th>";
     echo "</tr>";
     // output data of each row
     while($row = mysqli_fetch_assoc($result)) {
@@ -29,6 +29,8 @@ if (mysqli_num_rows($result) > 0) {
         echo "<br>Preformátovaná cena: ".$cena;*/
 
         echo "<td>".$row["cena"]."</td>";
+        echo "<td>".$row["poznamka"]."</td>";
+/*        echo "<td>$row['poznamka']</td>";*/
         echo "<td><a href='uprav-zaznam.php?id=".$row["id"]."'>Uprav</td>";
         echo "<td><a href='odstran-zaznam-z-databazy.php?id=".$row["id"]."'>Odstráň</td>";
         echo "</tr>";
